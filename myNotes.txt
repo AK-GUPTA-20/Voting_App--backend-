@@ -1,0 +1,64 @@
+Voting app using backend only...
+
+what???
+-> A functionality where user can give vote to listed candidates
+
+-----------------------> MAKING <----------------------------------------
+
+Models
+Routes 
+Middleware
+
+
+-> functionality
+
+    1. user sign in/ sign up with password, then do vote
+    2. see the list of candidates
+    3. only one user can vote at once 
+    4. there is a Route which show the list of candidates and their live votes count 
+    5. user have their unique ID(Govt. proof) : Aadhar number
+    6. there Should be one admin who can maintain the candidate side(delete,update,add)
+    7. user can change their password (use bcrypt for password)
+    8. 
+
+
+->Routes
+
+    User Authentication:
+        POST /signup – Create a new user account. (Generate token)
+        POST /login – Log in to an existing account. (Generate token)
+        PUT  /profile - check or update profile
+
+    Voting:
+        GET /candidates – Get the list of candidates.
+        POST /vote/:candidateId – Vote for a specific candidate.
+
+    Vote Counts:
+        GET /vote/counts – Get candidates sorted by vote counts.
+
+    User Profile:
+        GET /profile – Get the user's profile info.
+        PUT /profile/password – Change the user's password.
+
+    Admin Candidate Management:
+        POST /candidates – Create a new candidate.
+        PUT /candidates/:candidateId – Update an existing candidate.
+        DELETE /candidates/:candidateId – Delete a candidate.
+
+
+->  Models
+
+
+
+
+-> Middleware
+    1. jwtAuthMiddleware(used in profile) -> 
+            . Extract the token
+            . Check if token valid or not
+            . if valid then varify the jwt token (jwt.varify(token,mytoken))
+                                                    [for mytoken use payload]
+            . attach user information to token
+            . next()
+
+    2. 
+
