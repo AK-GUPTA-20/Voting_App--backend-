@@ -206,5 +206,5 @@ GitHub: [@AK-GUPTA-20](https://github.com/AK-GUPTA-20)
 ---
 
 ## 📝 License
-
+This project is licensed under the [MIT License](LICENSE)
 
