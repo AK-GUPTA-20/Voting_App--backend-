@@ -49,7 +49,7 @@ A secure backend API for an online voting system built with Node.js, Express, an
    
 2.Install dependencies:
 
-bash
+```bash
   npm install
 
 3.Create a .env file in the root directory:
@@ -59,6 +59,7 @@ bash
   JWT_SECRET=yourSecretKey
 
 4.Start the server:
+```bash
   npm start
 
 
